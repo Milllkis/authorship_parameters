@@ -13,4 +13,5 @@
 Ознакомиться с посчитанными значениями параметров для каждого автора можно по следующим ссылкам: [Автор 1409](https://github.com/Milllkis/authorship_parameters/blob/main/processed_1409.csv), [Автор 1476](https://github.com/Milllkis/authorship_parameters/blob/main/processed_1476.csv), [Автор 2083](https://github.com/Milllkis/authorship_parameters/blob/main/processed_2083.csv), [Автор 3368](https://github.com/Milllkis/authorship_parameters/blob/main/processed_3368.csv), [Автор 4291](https://github.com/Milllkis/authorship_parameters/blob/main/processed_4291.csv) и [Автор 918](https://github.com/Milllkis/authorship_parameters/blob/main/processed_918.csv).
 
 Работу выполнила: Камская Милена
+
 Научный руководитель: Клышинский Эдуард Станиславович
