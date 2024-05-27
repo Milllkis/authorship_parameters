@@ -12,7 +12,13 @@ import math
 
 
 def preprocess(text) -> str:
-    """ """
+    """Предобработка текста.
+    
+    Параметры:
+    text (str): Входной текст для предобработки.
+    
+    Возвращает:
+    str: Предобработанный текст. """
     # приводим к нижнему регистру и убираем числа и пробелы между ними, а также возможные оставшиеся коды html
     text = re.sub('(?<=\d)\s+(?=\d)', '', text.lower())
     text = re.sub(r"[0-9]+", "", text)
@@ -29,7 +35,13 @@ def preprocess(text) -> str:
     return text
 
 def tokenize(text) -> list:
-    """ """
+    """Токенизация текста на русском языке с использованием TreebankWordTokenizer().
+    
+    Параметры:
+    text (str): Входной текст для токенизации.
+    
+    Возвращает:
+    list: Список токенов. """
     text = preprocess(text)
 
     for symbol in list(string.punctuation):
@@ -41,7 +53,13 @@ def tokenize(text) -> list:
     return words
 
 def tokenize_rs(text) -> list:
-    """ """
+    """Токенизация текста на русском языке с использованием TreebankWordTokenizer() и удалением стоп-слов.
+    
+    Параметры:
+    text (str): Входной текст для токенизации.
+    
+    Возвращает:
+    list: Список токенов.  """
     text = preprocess(text)
 
     for symbol in list(string.punctuation):
