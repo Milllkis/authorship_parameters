@@ -5,7 +5,14 @@ import stanza
 nlp = stanza.Pipeline(lang='ru', processors='tokenize,pos,lemma,depparse')
 
 def stanza_process(text) -> list:
-    """ """
+    """Обрабатывает входной текст с использованием Stanza NLP pipeline и извлекает информацию об каждом слове в тексте.
+    
+    Параметры:
+    text (str): Входной текст для обработки.
+    
+    Возвращает:
+    list: Список, содержащий информацию о каждом слове в тексте в формате:
+          ['word_id word_text word_upos word_head word_head_text word_deprel', ...]"""
     doc = nlp(text)
     total = []
     for sent in doc.sentences:
